@@ -1,0 +1,96 @@
+@media screen and (max-width: 1250px) {
+  html {
+    font-size: 100%;
+  }
+  .content-con p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 58%;
+  }
+  .banner {
+    width: 100%;
+    background-size: cover;
+  }
+  .content {
+    padding-left: 25rem;
+  }
+  .content h3 {
+    padding-top: 25rem;
+  }
+  .search-bar {
+    padding-top: 25rem;
+  }
+  .reviews #next {
+    right: 8rem;
+  }
+  .reviews #prev {
+    left: 8rem;
+  }
+  .about,
+  .reviews,
+  .faq {
+    padding-top: 15rem;
+  }
+  header .logo img {
+    width: 8%;
+  }
+  input {
+    font-size: 15%;
+  }
+  .container .section {
+    margin: 0 8%;
+  }
+  .container .side-1 p {
+    font-size: 14rem;
+  }
+  .container .side-2 p {
+    font-size: 14rem;
+  }
+  .footer-up .logo img {
+    width: 70%;
+  }
+  .footer-up .follow-us ul {
+    font-size: 0.8rem;
+  }
+  .footer-up .follow-us ul a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  header {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    font-size: 44%;
+  }
+  header .logo a {
+    font-size: 1.6rem;
+  }
+  header .logo img {
+    width: 15%;
+  }
+  .content-con p {
+    font-size: 0.9rem;
+  }
+  .reviews #next {
+    right: 3.5rem;
+  }
+  .reviews #prev {
+    left: 3.5rem;
+  }
+  .container .section {
+    margin: 0 0%;
+  }
+  .container .side-1 p {
+    font-size: 13rem;
+  }
+  .container .side-2 p {
+    font-size: 13rem;
+  }
+}

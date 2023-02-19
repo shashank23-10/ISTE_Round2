@@ -7,7 +7,7 @@
 :root {
   --color-primary: #191d2b;
   --color-secondary: #e0ba4f;
-  --color-hover: #e3c285;
+  --color-hover: #a48d62;
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -23,7 +23,7 @@
 .light-mode {
   --color-primary: #f7fbf3;
   --color-secondary: #6685f5;
-  --color-hover: #3f68fe;
+  --color-hover: #838ba7;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -115,6 +115,10 @@ input {
   padding: 1rem;
   text-align: center;
   background-color: var(--color-secondary);
+  cursor: pointer;
+}
+.card:hover {
+  background-color: var(--color-hover);
 }
 .container {
   display: flex;

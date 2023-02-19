@@ -252,21 +252,28 @@ header .dark-mode {
   border: 0.1rem solid var(--color-secondary);
 }
 
-/* -------------------------------------------------------------------CONTENT TEXT------------------------------------------------------- */
+/* -------------------------------------------------------------------ABOUT TEXT------------------------------------------------------- */
 .about {
   background-color: var(--color-primary);
   padding: 0 5%;
   min-height: 100vh;
+  padding: 12.5%;
+}
+.about h1 {
+  color: var(--color-secondary);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 .about-class {
   display: flex;
 }
 .about .logo-con {
-  margin-right: 2rem;
+  margin-right: 5rem;
 }
 .about .content-con {
   font-size: 1.5rem;
-  color: var(--color-secondary);
+  color: var(--color-grey-1);
 }
 /*-------------------------------------------------Reviews----------------------------------------------*/
 .reviews {
@@ -369,6 +376,9 @@ header .dark-mode {
   border-radius: 50%;
   box-shadow: 0 0.3125rem 0.625rem var(--color-grey-3);
   cursor: pointer;
+}
+.content-con p {
+  font-size: 1.42rem;
 }
 .reviews #next {
   right: 16rem;
