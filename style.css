@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*----------------------------------------Root Directory for Colors---------------------------------------*/
+:root {
+  --color-primary: #191d2b;
+  --color-secondary: #e0ba4f;
+  --color-hover: #e3c285;
+  --color-white: #ffffff;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #dbe1e8;
+  --color-grey-2: #b2becd;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #2a2e35;
+  --color-grey-6: #12181b;
+  --br-sm-2: 0.875rem;
+  --box-shadow-1: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.3);
+}
+.light-mode {
+  --color-primary: #f7fbf3;
+  --color-secondary: #6685f5;
+  --color-hover: #3f68fe;
+  --color-white: #454e56;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #6c7983;
+  --color-grey-2: #6c7983;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #f2eaea;
+  --color-grey-6: #12181b;
+}
+/*----------------------------------------Scroll-Bar Animation---------------------------------------*/
+::-webkit-scrollbar {
+  width: 0;
+}
+#scroll-path {
+  position: fixed;
+  top: 10%;
+  right: 0;
+  width: 0.5rem;
+  background: var(--color-primary);
+}
+#progress-bar {
+  position: fixed;
+  top: 10%;
+  right: 0;
+  width: 0.5rem;
+  background: var(--color-secondary);
+  animation: animate 5s linear;
+}
+@keyframes animate {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #000;
+  min-height: 200vh;
+}
+
+/* --------------------------------------------------------------------HEADER-------------------------------------------------------- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 1;
+}
+header.sticky {
+  padding: 5px 100px;
+  background: #fff;
+}
+header .logo img {
+  width: 10%;
+  margin-right: 1%;
+}
+header .logo a {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+header.sticky .logo a {
+  color: #000;
+}
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  position: relative;
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+header.sticky ul li a {
+  color: #000;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(images/bg.webp);
+  background-size: cover;
+}
+header.sticky ul li a {
+  color: #000;
+}
+
+/* DARK-MODE */
+header .dark-mode {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  margin-top: 0.5%;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+}
+.dark-mode:hover {
+  background-color: var(--color-black);
+}
+
+/* -------------------------------------------------------------------CONTENT TEXT------------------------------------------------------- */
+.content {
+  text-align: center;
+  margin-left: -25rem;
+}
+.content h3 {
+  padding-top: 9.5rem;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+.content p {
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+.content .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--color-secondary);
+  color: #fff;
+  padding: 0.8rem 3rem;
+  border: 0.2rem solid transparent;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.content .btn:hover {
+  background: transparent;
+  border: 0.2rem solid var(--color-primary);
+  color: #fff;
+  transition-delay: 0.15s;
+}
+/*-------------------------------------------------Reviews----------------------------------------------*/
+.reviews {
+  background-color: var(--color-primary);
+  text-align: center;
+  min-height: 100vh;
+  padding: 12.5%;
+}
+.reviews h1 {
+  color: var(--color-secondary);
+  font-size: 2.5rem;
+}
+.reviews .container {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reviews .container .slide-container {
+  display: flex;
+  position: relative;
+}
+.reviews .container .slide-container .slide {
+  border-radius: 0.3125erm;
+  background: #fff;
+  box-shadow: 0 0.3125rem 0.625rem #333;
+  width: 35rem;
+  padding: 1rem;
+  margin: 1rem;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: slide 0.4s linear;
+}
+@keyframes slide {
+  0% {
+    transform: rotateX(90deg);
+  }
+}
+.reviews .container .slide-container .slide > * {
+  animation: slideContent 0.2s linear 0.4s backwards;
+}
+@keyframes slideContent {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+.reviews .container .slide-container .slide .icon {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.9rem;
+  font-size: 6rem;
+  color: var(--color-secondary);
+}
+.reviews .container .slide-container .slide img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0.6rem;
+}
+.reviews .container .slide-container .slide .user {
+  display: flex;
+  align-items: center;
+}
+.reviews .container .slide-container .slide .user .user-info h3 {
+  color: var(--color-grey-3);
+  font-size: 1.4rem;
+}
+.reviews .container .slide-container .slide .user .user-info .stars i {
+  color: var(--color-secondary);
+  font-size: 1rem;
+}
+.reviews .container .slide-container .slide .text {
+  color: var(--color-grey-2);
+  font-size: 0.9rem;
+  padding-top: 0.95rem;
+  font-style: italic;
+}
+.reviews .container .slide-container {
+  display: none;
+}
+.reviews .container .slide-container.active {
+  display: block;
+}
+.reviews #next,
+.reviews #prev {
+  position: absolute;
+  transform: translateY(-50%);
+  margin-top: -8.5rem;
+  height: 3.125rem;
+  width: 3.125rem;
+  line-height: 3.125rem;
+  text-align: center;
+  font-size: 1.25rem;
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  border-radius: 50%;
+  box-shadow: 0 0.3125rem 0.625rem var(--color-grey-3);
+  cursor: pointer;
+}
+.reviews #next {
+  right: 16rem;
+}
+.reviews #prev {
+  left: 16rem;
+}
+.reviews #next:hover,
+.reviews #prev:hover {
+  background: var(--color-primary);
+  color: var(--color-secondary);
+}

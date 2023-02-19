@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TITLE -->
+    <title>Aniplex</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+
+    <!-- GOOGLE FONT SYLES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Martel+Sans:wght@200&family=Babylonica&family=Josefin+Sans:wght@500&family=Merriweather:ital,wght@1,300&family=Playfair+Display:ital,wght@1,500&family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/favicon.html" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico" />
+  </head>
+
+  <!-- BODY -->
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!-- MENU BAR -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.webp" alt="logo" />
+          <p>ANIPLEX</p>
+        </a>
+      </div>
+
+      <!-- LINKS -->
+      <div class="links">
+        <ul>
+          <li><a href="#search">Search</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </div>
+
+      <!-- DARK MODE -->
+      <div class="dark-mode">
+        <button class="dark-mode" onclick="darkmode()">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <section class="banner">
+        <div class="content">
+          <h3>Your Anime, Right Away</h3>
+          <p>From films to fan clubs</p>
+          <a href="#" class="btn">Discover More</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- REVIEWS -->
+    <section class="rev" id="review">
+      <div class="reviews">
+        <h1>Reviews</h1>
+        <div class="container">
+          <div class="slide-container active">
+            <div class="slide">
+              <i class="fas fa-quote-right icon"></i>
+              <div class="user">
+                <img src="images/person1.webp" />
+                <div class="user-info">
+                  <h3>John Deo</h3>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text">
+                A long wait for a vacation coincided with my daughter’s first
+                birthday. My wife and I wanted the first trip with our daughter
+                to be filled with happy memories that we would look back at with
+                joy, pride, and pure love for one another. Celebrating her first
+                birthday in Thailand was one of the best moments of our lives.
+              </p>
+            </div>
+          </div>
+          <div class="slide-container">
+            <div class="slide">
+              <i class="fas fa-quote-right icon"></i>
+              <div class="user">
+                <img src="images/person2.webp" />
+                <div class="user-info">
+                  <h3>Rahul Ulises</h3>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text">
+                While I was searching for honeymoon packages, one of my friends
+                recommended to try Plan Your Trip. The main selling point about
+                this was the ability to customize your own package at a
+                bargainable and competitive price.
+              </p>
+            </div>
+          </div>
+          <div class="slide-container">
+            <div class="slide">
+              <i class="fas fa-quote-right icon"></i>
+              <div class="user">
+                <img src="images/person3.jpg" />
+                <div class="user-info">
+                  <h3>Anna Schmidt</h3>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text">
+                Every travel experience for me so far has been WOW (wonderful,
+                outstanding, and worth it). Be it with my husband, family,
+                friends, or alone, traveling has helped me to gain unique
+                experiences, be myself, and rejuvenate my mind, body, and soul.
+              </p>
+            </div>
+          </div>
+          <div class="slide-container">
+            <div class="slide">
+              <i class="fas fa-quote-right icon"></i>
+              <div class="user">
+                <img src="images/person4.jpg" />
+                <div class="user-info">
+                  <h3>Manoj Cai</h3>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text">
+                I browsed through multiple online travel portals and Plan Your
+                Trip provided me the best quotes for a week-long romantic trip
+                to Mauritius. What’s more, I could customize my Mauritius tour
+                package to suit the specific needs of my vacation.
+              </p>
+            </div>
+          </div>
+          <div class="slide-container">
+            <div class="slide">
+              <i class="fas fa-quote-right icon"></i>
+              <div class="user">
+                <img src="images/person5.jpg" />
+                <div class="user-info">
+                  <h3>Will Smith</h3>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text">
+                I got to know about Plan Your Trip via an online advertisement.
+                I started comparing their prices to other online travel
+                platforms. In the end, the quotes I received through Plan Your
+                Trip had the lowest price and best value for money.
+              </p>
+            </div>
+          </div>
+          <div class="slide-container">
+            <div class="slide">
+              <i class="fas fa-quote-right icon"></i>
+              <div class="user">
+                <img src="images/person6.jpg" />
+                <div class="user-info">
+                  <h3>Hannah Goslar</h3>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text">
+                To break away from the monotonous routine, curing the wedding
+                blues, and striking a healthy work-life balance we were looking
+                forward to a honeymoon at Bali. And that is exactly what we
+                eperienced as we went on to enjoy some of the most romantic
+                things to do in Bali on a trip of 6D/5N.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+        <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-up"></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
