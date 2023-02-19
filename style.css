@@ -91,7 +91,7 @@ header.sticky {
 }
 header .logo img {
   width: 10%;
-  margin-right: 1%;
+  margin-right: 1rem;
 }
 header .logo a {
   position: relative;
@@ -221,6 +221,7 @@ header .dark-mode {
   position: relative;
   transform-style: preserve-3d;
   animation: slide 0.4s linear;
+  border-radius: 2rem;
 }
 @keyframes slide {
   0% {
@@ -301,4 +302,125 @@ header .dark-mode {
 .reviews #prev:hover {
   background: var(--color-primary);
   color: var(--color-secondary);
+}
+
+/*------------------------------frequently asked questions-----------------------------------------*/
+.faq {
+  background-color: var(--color-primary);
+  padding: 12.5%;
+  min-height: 100vh;
+}
+.faq h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--color-secondary);
+  padding-top: 1rem;
+}
+.section-center {
+  width: 40rem;
+  margin: 0 auto;
+  max-width: 70rem;
+}
+.question {
+  background: var(--color-grey-5);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  padding: 1rem 1rem 0 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+.question-title p {
+  margin-bottom: 0;
+  letter-spacing: var(--spacing);
+  color: var(--color-grey-1);
+  font-size: 1rem;
+}
+.question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: var(--color-grey-1);
+  transition: var(--transition);
+}
+.question-btn:hover {
+  transform: rotate(90deg);
+}
+.question-text {
+  padding: 1rem 0 1.5rem 0;
+  border-top: 0.0625rem solid var(--color-grey-3);
+  color: var(--color-grey-2);
+}
+.question-text p {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+.question-text {
+  display: none;
+}
+.show-text .question-text {
+  display: block;
+}
+.minus-icon {
+  display: none;
+}
+.show-text .minus-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
+}
+
+/*------------------------------------------------------------------footer-----------------------------------------------------------------------*/
+.footer-up {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--color-primary);
+  padding: 1.5rem;
+  padding-top: 5rem;
+  padding-left: 5.5rem;
+}
+.footer-up .quicklinks h2,
+.locations h2,
+.contact-us h2,
+.follow-us h2 {
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+  text-align: start;
+}
+.footer-up p {
+  text-align: start;
+  color: var(--color-grey-1);
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+.footer-up p:hover {
+  transform: translateX(2rem);
+}
+.footer-up .follow-us ul {
+  color: var(--color-grey-1);
+  text-align: start;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  margin-right: 11rem;
+}
+.footer-up .follow-us ul a {
+  font-size: 1.1rem;
+  color: var(--color-grey-1);
+}
+.footer-up .follow-us ul:hover {
+  transform: translateX(2rem);
+}
+.footer-down {
+  text-align: center;
+  background-color: var(--color-secondary);
+  padding: 1rem;
+  letter-spacing: 2px;
 }
