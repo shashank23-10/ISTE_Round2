@@ -91,6 +91,8 @@ h3 {
   text-transform: uppercase;
 }
 input {
+  border: none;
+  outline: none;
   border-radius: 1rem;
   padding: 0.5rem 1rem;
   background-color: rgb(255, 255, 255);
