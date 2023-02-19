@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*----------------------------------------Root Directory for Colors---------------------------------------*/
+:root {
+  --color-primary: #191d2b;
+  --color-secondary: #e0ba4f;
+  --color-hover: #e3c285;
+  --color-white: #ffffff;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #dbe1e8;
+  --color-grey-2: #b2becd;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #2a2e35;
+  --color-grey-6: #12181b;
+  --br-sm-2: 0.875rem;
+  --box-shadow-1: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.3);
+}
+.light-mode {
+  --color-primary: #f7fbf3;
+  --color-secondary: #6685f5;
+  --color-hover: #3f68fe;
+  --color-white: #454e56;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #6c7983;
+  --color-grey-2: #6c7983;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #f2eaea;
+  --color-grey-6: #12181b;
+}
+
+/*----------------------------------------Scroll-Bar Animation---------------------------------------*/
+::-webkit-scrollbar {
+  width: 0;
+}
+#scroll-path {
+  position: fixed;
+  top: 10%;
+  right: 0;
+  width: 0.5rem;
+  background: var(--color-primary);
+}
+#progress-bar {
+  position: fixed;
+  top: 10%;
+  right: 0;
+  width: 0.5rem;
+  background: var(--color-secondary);
+  animation: animate 5s linear;
+}
+@keyframes animate {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+/*----------------------------------------Body Redirect---------------------------------------*/
+main {
+  padding: 5rem 0 2rem 0;
+  background: var(--color-primary);
+}
+section {
+}
+h3 {
+  color: var(--color-white);
+}
+.topnav {
+  overflow: hidden;
+  background: var(--color-primary);
+}
+.topnav a {
+  display: block;
+  color: var(--color-secondary);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+input {
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: rgb(255, 255, 255);
+}
+.thumbnail {
+  width: 16rem;
+  height: 21rem;
+  border-radius: 1rem;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.column {
+  display: flex;
+  float: left;
+  width: 50%;
+  padding: 1rem;
+}
+.card {
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--color-secondary);
+}
+.container {
+  display: flex;
+  background-color: var(--color-primary);
+}
+.container .section {
+  margin: 0 25%;
+}
+.container .side-1 p {
+  writing-mode: vertical-lr;
+  color: var(--color-white);
+  font-size: 7.5rem;
+  position: sticky;
+  top: 10%;
+}
+.container .side-2 p {
+  writing-mode: vertical-rl;
+  transform: scaleY(-1);
+  transform: scaleX(-1);
+  color: var(--color-white);
+  font-size: 7.5rem;
+  position: sticky;
+  top: 10%;
+}

@@ -157,6 +157,30 @@ header .dark-mode {
   background-color: var(--color-black);
 }
 
+/* --------------BACK 2 TOP------------------ */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 1.25rem;
+  right: 30px;
+  z-index: 2;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: var(--color-secondary);
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.25rem;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
 /* -------------------------------------------------------------------CONTENT TEXT------------------------------------------------------- */
 .content {
   text-align: center;
@@ -211,15 +235,11 @@ header .dark-mode {
   padding-left: 8rem;
   display: flex;
 }
-.search-bar .search input {
-  font-size: 2rem;
-  width: 90%;
-  padding: 0.5rem 0rem 0.5rem 1rem;
-}
 .search-bar .submit {
   font-size: 1.8rem;
   border-radius: 0.625rem;
-  padding: 0.4rem 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
   background-color: var(--color-secondary);
   color: var(--color-primary);
   border: transparent;
@@ -232,30 +252,22 @@ header .dark-mode {
   border: 0.1rem solid var(--color-secondary);
 }
 
-/* --------------BACK 2 TOP------------------ */
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 1.25rem;
-  right: 30px;
-  z-index: 2;
-  font-size: 1rem;
-  border: none;
-  outline: none;
-  background-color: var(--color-secondary);
-  color: white;
-  cursor: pointer;
-  padding: 1rem;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.25rem;
-  border-radius: 50%;
+/* -------------------------------------------------------------------CONTENT TEXT------------------------------------------------------- */
+.about {
+  background-color: var(--color-primary);
+  padding: 0 5%;
+  min-height: 100vh;
 }
-
-#myBtn:hover {
-  background-color: #555;
+.about-class {
+  display: flex;
 }
-
+.about .logo-con {
+  margin-right: 2rem;
+}
+.about .content-con {
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+}
 /*-------------------------------------------------Reviews----------------------------------------------*/
 .reviews {
   background-color: var(--color-primary);

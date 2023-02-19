@@ -1,83 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- TITLE -->
-    <title>Your Search</title>
-
-    <!-- STYLESHEET -->
+    <title>Movie Page</title>
+    <link rel="stylesheet" href="redirect.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media-queries.css" />
-
-    <!-- GOOGLE FONT SYLES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abel&family=Martel+Sans:wght@200&family=Babylonica&family=Josefin+Sans:wght@500&family=Merriweather:ital,wght@1,300&family=Playfair+Display:ital,wght@1,500&family=Poppins&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- FONT AWESOME ICONS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <!-- FAVICONS ICON -->
-    <link rel="icon" href="images/favicon.html" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico" />
+        <!-- FAVICONS ICON -->
+        <link rel="icon" href="images/favicon.html" type="image/x-icon" />
+        <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico" />
+      </head>
+        <!-- FONT AWESOME ICONS -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
   </head>
-    <body>
-
-    </body>
-  <footer>
-    <div class="footer-up">
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!-- MENU BAR -->
       <div class="logo">
-        <img src="images/logo.webp" alt="logo">
+        <a href="index.html">
+          <img src="images/logo.webp" alt="logo" />
+          <p>ANIPLEX</p>
+        </a>
       </div>
-      <div class="quicklinks">
-        <h2>Quick Links</h2>
-        <p>About Us</p>
-        <p>Terms and Conditions</p>
-        <p>Privacy Policy</p>
-        <p>Help</p>
+      <!-- LINKS -->
+      <div class="links">
+        <ul>
+          <li><a href="#search">Search</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#review">Reviews</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li>
+            <div class="topnav">
+              <div class="search-con">
+                <form role="search" id="form">
+                  <input type="search" id="query" name="q" placeholder="Search..." />
+                </form>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="contact-us">
-        <h2>Contact Us</h2>
-        <p>contact@aniplex.com</p>
-        <p>+91 98321-07255</p>
-        <p>+91 79935-09143</p>
+      <!-- DARK MODE -->
+      <div class="dark-mode">
+        <button class="dark-mode" onclick="darkmode()">
+          <i class="fa-solid fa-moon"></i>
+        </button>
       </div>
-      <div class="follow-us">
-        <h2>Follow Us</h2>
-        <ul>
-          <i class="fa-brands fa-instagram"></i>
-          <a href="https://www.instagram.com/__shashankk__/" target="blank"> Instagram</a>
-        </ul>
-        <ul>
-          <i class="fa-brands fa-twitter"></i>
-          <a href="https://twitter.com/meSPandey" target="blank"> Twitter</a>
-        </ul>
-        <ul>
-          <i class="fa-brands fa-linkedin"></i>
-          <a href="https://www.linkedin.com/in/shashank2310/ target="blank">Linkedin</a>
-        </ul>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="side-1">
+          <p>MOVIES</p>
+        </div> 
+        <div class="section">
+          <section id="section"></section>
+        </div>
+        <div class="side-2">
+          <p>MOVIES</p>
+        </div>     
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-up">
+        <div class="logo">
+          <img src="images/logo.webp" alt="logo">
+        </div>
+        <div class="quicklinks">
+          <h2>Quick Links</h2>
+          <p>About Us</p>
+          <p>Terms and Conditions</p>
+          <p>Privacy Policy</p>
+          <p>Help</p>
+        </div>
+        <div class="contact-us">
+          <h2>Contact Us</h2>
+          <p>contact@aniplex.com</p>
+          <p>+91 98321-07255</p>
+          <p>+91 79935-09143</p>
+        </div>
+        <div class="follow-us">
+          <h2>Follow Us</h2>
+          <ul>
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instagram.com/__shashankk__/" target="blank"> Instagram</a>
+          </ul>
+          <ul>
+            <i class="fa-brands fa-twitter"></i>
+            <a href="https://twitter.com/meSPandey" target="blank"> Twitter</a>
+          </ul>
+          <ul>
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/shashank2310/ target="blank">Linkedin</a>
+          </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer-down">
-      <div class="copyright">
-        <h4>Aniplex © 2023. All rights reserved.</h4>
-        <h4>Designed by Team Sentinels</h4>
+      <div class="footer-down">
+        <div class="copyright">
+          <h4>Aniplex © 2023. All rights reserved.</h4>
+          <h4>Designed by Team Sentinels</h4>
+        </div>
       </div>
-    </div>
-  </footer>
-    <script src="script.js"></script>
+    </footer>
   </body>
+  <script src="redirectScript.js"></script>
 </html>
