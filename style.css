@@ -157,6 +157,71 @@ header .dark-mode {
   background-color: var(--color-black);
 }
 
+/*-----------------------------------------------SEARCH-----------------------------------------*/
+.search-bar {
+  padding: 12.5%;
+  background-color: var(--color-primary);
+  text-align: center;
+  min-height: 100vh;
+}
+.search-bar .heading {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--color-secondary);
+}
+.search-bar .heading p {
+  font-size: 1.9rem;
+}
+.search-bar .search {
+  padding: 2rem;
+  padding-left: 8rem;
+  display: flex;
+}
+.search-bar .search input {
+  font-size: 2rem;
+  width: 90%;
+  padding: 0.5rem 0rem 0.5rem 1rem;
+}
+.search-bar .submit {
+  font-size: 1.8rem;
+  border-radius: 0.625rem;
+  padding: 0.4rem 1rem;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border: transparent;
+  cursor: pointer;
+}
+.search-bar .submit:hover {
+  background-color: transparent;
+  color: var(--color-secondary);
+  transition-delay: 0.15s;
+  border: 0.1rem solid var(--color-secondary);
+}
+
+/* --------------BACK 2 TOP------------------ */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 1.25rem;
+  right: 30px;
+  z-index: 2;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: var(--color-secondary);
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.25rem;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
 /* -------------------------------------------------------------------CONTENT TEXT------------------------------------------------------- */
 .content {
   text-align: center;
@@ -386,6 +451,9 @@ header .dark-mode {
   padding: 1.5rem;
   padding-top: 5rem;
   padding-left: 5.5rem;
+}
+.footer-up .logo img {
+  width: 45%;
 }
 .footer-up .quicklinks h2,
 .locations h2,
