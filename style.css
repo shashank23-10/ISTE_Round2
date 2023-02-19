@@ -82,12 +82,12 @@ header {
   justify-content: space-between;
   align-items: center;
   transition: 0.6s;
-  padding: 40px 100px;
+  padding: 1rem 2rem;
   z-index: 1;
+  background-color: var(--color-primary);
 }
 header.sticky {
   padding: 5px 100px;
-  background: #fff;
 }
 header .logo img {
   width: 10%;
@@ -98,14 +98,14 @@ header .logo a {
   display: flex;
   text-decoration: none;
   font-weight: 700;
-  color: #fff;
+  color: var(--color-secondary);
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.6s;
 }
 header.sticky .logo a {
-  color: #000;
+  color: var(--color-secondary);
 }
 header ul {
   position: relative;
@@ -121,7 +121,7 @@ header ul li a {
   position: relative;
   margin: 0 1rem;
   text-decoration: none;
-  color: #fff;
+  color: var(--color-secondary);
   letter-spacing: 2px;
   font-weight: 500px;
   transition: 0.6s;
@@ -155,6 +155,40 @@ header .dark-mode {
 }
 .dark-mode:hover {
   background-color: var(--color-black);
+}
+
+/* -------------------------------------------------------------------CONTENT TEXT------------------------------------------------------- */
+.content {
+  text-align: center;
+  margin-left: -25rem;
+}
+.content h3 {
+  padding-top: 15rem;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+.content p {
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+.content .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--color-secondary);
+  color: #fff;
+  padding: 0.8rem 3rem;
+  border: 0.2rem solid transparent;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.content .btn:hover {
+  background: transparent;
+  border: 0.2rem solid var(--color-primary);
+  color: #fff;
+  transition-delay: 0.15s;
 }
 
 /*-----------------------------------------------SEARCH-----------------------------------------*/
@@ -222,39 +256,6 @@ header .dark-mode {
   background-color: #555;
 }
 
-/* -------------------------------------------------------------------CONTENT TEXT------------------------------------------------------- */
-.content {
-  text-align: center;
-  margin-left: -25rem;
-}
-.content h3 {
-  padding-top: 9.5rem;
-  font-size: 2.8rem;
-  text-transform: uppercase;
-  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
-  color: #fff;
-}
-.content p {
-  font-size: 1.6rem;
-  color: #fff;
-  padding: 0.5rem 0;
-}
-.content .btn {
-  display: inline-block;
-  margin-top: 1rem;
-  background: var(--color-secondary);
-  color: #fff;
-  padding: 0.8rem 3rem;
-  border: 0.2rem solid transparent;
-  cursor: pointer;
-  font-size: 1.7rem;
-}
-.content .btn:hover {
-  background: transparent;
-  border: 0.2rem solid var(--color-primary);
-  color: #fff;
-  transition-delay: 0.15s;
-}
 /*-------------------------------------------------Reviews----------------------------------------------*/
 .reviews {
   background-color: var(--color-primary);
@@ -492,3 +493,5 @@ header .dark-mode {
   padding: 1rem;
   letter-spacing: 2px;
 }
+
+/* -------------------------------------------------------------------REDIRECT PAGE------------------------------------------------------ */
